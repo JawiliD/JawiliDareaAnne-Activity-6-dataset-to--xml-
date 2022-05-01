@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" stand-alone="yes"?>
+<!DOCTYPE Air_Traffic_Passenger_Statistics [
+	<!ELEMENT Air_Traffic_Passenger_Statistics (first,second,third,fourth,fifth,sixth,seventh,eight,ninth,tenth)> 
+
+	<!ELEMENT first (#PCDATA)>
+	<!ELEMENT second (#PCDATA)>
+	<!ELEMENT third (#PCDATA)>
+	<!ELEMENT fourth (#PCDATA)>
+	<!ELEMENT fifth (#PCDATA)>
+	<!ELEMENT sixth (#PCDATA)>
+	<!ELEMENT seventh (#PCDATA)>
+	<!ELEMENT eighth (#PCDATA)>
+	<!ELEMENT ninth (#PCDATA)>
+	<!ELEMENT tenth (#PCDATA)>
+	<!ATTLIST Air_Traffic_Passenger_Statistics id CDATA #REQUIRED>
+	]>
 
 <Air_Traffic_Passenger_Statistics id="Activity_Period">
 	<first>200507</first>
