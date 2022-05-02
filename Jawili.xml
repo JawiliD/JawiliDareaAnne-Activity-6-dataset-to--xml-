@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" stand-alone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Air_Traffic_Passenger_Statistics [
+<!ELEMENT Air_Traffic_Passenger_Statistics (Air_Traffic_Passenger_Statistics)>
 	<!ELEMENT Air_Traffic_Passenger_Statistics (first,second,third,fourth,fifth,sixth,seventh,eight,ninth,tenth)> 
 
 	<!ELEMENT first (#PCDATA)>
@@ -14,124 +15,125 @@
 	<!ELEMENT tenth (#PCDATA)>
 	<!ATTLIST Air_Traffic_Passenger_Statistics id CDATA #REQUIRED>
 	]>
-
-<Air_Traffic_Passenger_Statistics id="Activity_Period">
-	<first>200507</first>
-	<second>200507</second>
-	<third>200507</third>
-	<fourth>200507</fourth>
-	<fifth>200507</fifth>
-	<sixth>200507</sixth>
-	<seventh>200507</seventh>
-	<eigth>200507</eighth>
-	<ninth>200507</ninth>
-	<tenth>200507</tenth>
-</Air_Traffic_Passenger_Statistics>
-<Air_Traffic_Passenger_Statistics id="Operating_Airline">
-	<first>ATA Airlines</first>
-	<second>ATA Airlines</second>
-	<third>ATA Airlines</third>
-	<fourth>Air Canada</fourth>
-	<fifth>Air Canada</fifth>
-	<sixth>Air China</sixth>
-	<seventh>Air China</seventh>
-	<eigth>Air France</eighth>
-	<ninth>Air France</ninth>
-	<tenth>Air New Zealand</tenth>
-</Air_Traffic_Passenger_Statistics>
-<Air_Traffic_Passenger_Statistics id="Operating_Airline_IATA Code">
-	<first>TZ</first>
-	<second>TZ</second>
-	<third>TZ</third>
-	<fourth>AC</fourth>
-	<fifth>AC</fifth>
-	<sixth>CA</sixth>
-	<seventh>CA</seventh>
-	<eigth>AF</eighth>
-	<ninth>AF</ninth>
-	<tenth>NZ</tenth>
-</Air_Traffic_Passenger_Statistics>
-<Air_Traffic_Passenger_Statistics id="Published_Airline">
-	<first>ATA Airlines</first>
-	<second>ATA Airlines</second>
-	<third>ATA Airlines</third>
-	<fourth>Air Canada</fourth>
-	<fifth>Air Canada</fifth>
-	<sixth>Air China</sixth>
-	<seventh>Air China</seventh>
-	<eigth>Air France</eighth>
-	<ninth>Air France</ninth>
-	<tenth>Air New Zealand</tenth>
-</Air_Traffic_Passenger_Statistics>
-<Air_Traffic_Passenger_Statistics id="Published_Airline_IATA Code">
-	<first>TZ</first>
-	<second>TZ</second>
-	<third>TZ</third>
-	<fourth>AC</fourth>
-	<fifth>AC</fifth>
-	<sixth>CA</sixth>
-	<seventh>CA</seventh>
-	<eigth>AF</eighth>
-	<ninth>AF</ninth>
-	<tenth>NZ</tenth>
-</Air_Traffic_Passenger_Statistics>
-<Air_Traffic_Passenger_Statistics id="GEO_Summary">
-	<first>Domestic</first>
-	<second>Domestic</second>
-	<third>Domestic</third>
-	<fourth>International</fourth>
-	<fifth>International</fifth>
-	<sixth>International</sixth>
-	<seventh>International</seventh>
-	<eigth>International</eighth>
-	<ninth>International</ninth>
-	<tenth>International</tenth>
-</Air_Traffic_Passenger_Statistics>
-<Air_Traffic_Passenger_Statistics id="GEO_Region">
-	<first>US</first>
-	<second>US</second>
-	<third>Us</third>
-	<fourth>Canada</fourth>
-	<fifth>Canada</fifth>
-	<sixth>Asia</sixth>
-	<seventh>Asia</seventh>
-	<eigth>Europe</eighth>
-	<ninth>Europe</ninth>
-	<tenth>Australia/Oceania</tenth>
-</Air_Traffic_Passenger_Statistics>
-<Air_Traffic_Passenger_Statistics id="Activity_Type_Code">
-	<first>Deplaned</first>
-	<second>Enplaned</second>
-	<third>Thru/Transit</third>
-	<fourth>Deplaned</fourth>
-	<fifth>Enplaned</fifth>
-	<sixth>Deplaned</sixth>
-	<seventh>Enplaned</seventh>
-	<eigth>Deplaned</eighth>
-	<ninth>Enplaned</ninth>
-	<tenth>Deplaned</tenth>
-</Air_Traffic_Passenger_Statistics>
-<Air_Traffic_Passenger_Statistics id="Price_Category_Code">
-	<first>Low Fare</first>
-	<second>Low Fare</second>
-	<third>Low Fare</third>
-	<fourth>Other</fourth>
-	<fifth>Other</fifth>
-	<sixth>Other</sixth>
-	<seventh>Other</seventh>
-	<eigth>Other</eighth>
-	<ninth>Other</ninth>
-	<tenth>Other</tenth>
-</Air_Traffic_Passenger_Statistics>
-<Air_Traffic_Passenger_Statistics id="Terminal">
-	<first>Terminal 1</first>
-	<second>Terminal 1</second>
-	<third>Terminal 1</third>
-	<fourth>Terminal 1</fourth>
-	<fifth>Terminal 1</fifth>
-	<sixth>International</sixth>
-	<seventh>International</seventh>
-	<eigth>International</eighth>
-	<ninth>International</ninth>
-	<tenth>International</tenth>
+<Air_Traffic_Passenger_Statistics id="root_node">
+	<Air_Traffic_Passenger_Statistics id="Activity_Period">
+		<first>200507</first>
+		<second>200507</second>
+		<third>200507</third>
+		<fourth>200507</fourth>
+		<fifth>200507</fifth>
+		<sixth>200507</sixth>
+		<seventh>200507</seventh>
+		<eigth>200507</eigth>
+		<ninth>200507</ninth>
+		<tenth>200507</tenth>
+	</Air_Traffic_Passenger_Statistics>
+	<Air_Traffic_Passenger_Statistics id="Operating_Airline">
+		<first>ATA Airlines</first>
+		<second>ATA Airlines</second>
+		<third>ATA Airlines</third>
+		<fourth>Air Canada</fourth>
+		<fifth>Air Canada</fifth>
+		<sixth>Air China</sixth>
+		<seventh>Air China</seventh>
+		<eigth>Air France</eigth>
+		<ninth>Air France</ninth>
+		<tenth>Air New Zealand</tenth>
+		</Air_Traffic_Passenger_Statistics>
+	<Air_Traffic_Passenger_Statistics id="Operating_Airline_IATA Code">
+		<first>TZ</first>
+		<second>TZ</second>
+		<third>TZ</third>
+		<fourth>AC</fourth>
+		<fifth>AC</fifth>
+		<sixth>CA</sixth>
+		<seventh>CA</seventh>
+		<eigth>AF</eigth>
+		<ninth>AF</ninth>
+		<tenth>NZ</tenth>
+	</Air_Traffic_Passenger_Statistics>
+	<Air_Traffic_Passenger_Statistics id="Published_Airline">
+		<first>ATA Airlines</first>
+		<second>ATA Airlines</second>
+		<third>ATA Airlines</third>
+		<fourth>Air Canada</fourth>
+		<fifth>Air Canada</fifth>
+		<sixth>Air China</sixth>
+		<seventh>Air China</seventh>
+		<eigth>Air France</eigth>
+		<ninth>Air France</ninth>
+		<tenth>Air New Zealand</tenth>
+	</Air_Traffic_Passenger_Statistics>
+	<Air_Traffic_Passenger_Statistics id="Published_Airline_IATA Code">
+		<first>TZ</first>
+		<second>TZ</second>
+		<third>TZ</third>
+		<fourth>AC</fourth>
+		<fifth>AC</fifth>
+		<sixth>CA</sixth>
+		<seventh>CA</seventh>
+		<eigth>AF</eigth>
+		<ninth>AF</ninth>
+		<tenth>NZ</tenth>
+	</Air_Traffic_Passenger_Statistics>
+	<Air_Traffic_Passenger_Statistics id="GEO_Summary">
+		<first>Domestic</first>
+		<second>Domestic</second>
+		<third>Domestic</third>
+		<fourth>International</fourth>
+		<fifth>International</fifth>
+		<sixth>International</sixth>
+		<seventh>International</seventh>
+		<eigth>International</eigth>
+		<ninth>International</ninth>
+		<tenth>International</tenth>
+	</Air_Traffic_Passenger_Statistics>
+	<Air_Traffic_Passenger_Statistics id="GEO_Region">
+		<first>US</first>
+		<second>US</second>
+		<third>Us</third>
+		<fourth>Canada</fourth>
+		<fifth>Canada</fifth>
+		<sixth>Asia</sixth>
+		<seventh>Asia</seventh>
+		<eigth>Europe</eigth>
+		<ninth>Europe</ninth>
+		<tenth>Australia/Oceania</tenth>
+	</Air_Traffic_Passenger_Statistics>
+	<Air_Traffic_Passenger_Statistics id="Activity_Type_Code">
+		<first>Deplaned</first>
+		<second>Enplaned</second>
+		<third>Thru/Transit</third>
+		<fourth>Deplaned</fourth>
+		<fifth>Enplaned</fifth>
+		<sixth>Deplaned</sixth>
+		<seventh>Enplaned</seventh>
+		<eigth>Deplaned</eigth>
+		<ninth>Enplaned</ninth>
+		<tenth>Deplaned</tenth>
+	</Air_Traffic_Passenger_Statistics>
+	<Air_Traffic_Passenger_Statistics id="Price_Category_Code">
+		<first>Low Fare</first>
+		<second>Low Fare</second>
+		<third>Low Fare</third>
+		<fourth>Other</fourth>
+		<fifth>Other</fifth>
+		<sixth>Other</sixth>
+		<seventh>Other</seventh>
+		<eigth>Other</eigth>
+		<ninth>Other</ninth>
+		<tenth>Other</tenth>
+	</Air_Traffic_Passenger_Statistics>
+	<Air_Traffic_Passenger_Statistics id="Terminal">
+		<first>Terminal 1</first>
+		<second>Terminal 1</second>
+		<third>Terminal 1</third>
+		<fourth>Terminal 1</fourth>
+		<fifth>Terminal 1</fifth>
+		<sixth>International</sixth>
+		<seventh>International</seventh>
+		<eigth>International</eigth>
+		<ninth>International</ninth>
+		<tenth>International</tenth>
+	</Air_Traffic_Passenger_Statistics>
 </Air_Traffic_Passenger_Statistics>
